@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GPS Tracker</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script>
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: { lat: -43.574744, lng: 172.549143 },
+        });
+
+        const pathCoords = [
+          { lat: -43.574744, lng: 172.549143 },
+          { lat: -43.574500, lng: 172.550000 },
+          { lat: -43.574200, lng: 172.551200 },
+          { lat: -43.573900, lng: 172.552300 },
+        ];
+
+        // Draw path
+        const path = new google.maps.Polyline({
+          path: pathCoords,
+          geodesic: true,
+          strokeColor: "#007bff",
+          strokeOpacity: 1.0,
+          strokeWeight: 4,
+        });
+
+        path.setMap(map);
+
+        // Optional: Add markers
+        pathCoords.forEach((point, index) => {
+          new google.maps.Marker({
+            position: point,
+            map: map,
+            label: `${index + 1}`,
+          });
+        });
+      }
+    </script>
+    <style>
+      #map {
+        height: 100vh;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body onload="initMap()">
+    <div id="map"></div>
+  </body>
+</html>
