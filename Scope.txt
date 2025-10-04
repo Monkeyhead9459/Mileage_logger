@@ -1,0 +1,27 @@
+Option 1:
+ESP32 creates an access point that a program on the computer remote access to acquire gps data.
+After each acquisition csv file is renamed with an increasing integer
+Remote access computer compiles all raw gps data and breaks it down.
+
+Useful data:
+time period of each saved csv file??
+distance per day
+distance per month
+
+Option 2:
+ESP32 uploads data to cloud storage (AWS AmazonDynamoDB)  computer remote access to acquire gps data.
+After each acquisition csv file is renamed with an increasing integer
+Remote access computer compiles all raw gps data and breaks it down.
+
+Useful data:
+time period of each saved csv file??
+distance per day
+distance per month
+
+RAP (Remote access program):
+Python GUI (tinker, pyQt)
+use boto3 to access AWS
+use road api to find nearest road and track pathway or just use raw data
+use distance and elevation api???
+make csv for each day trip to displayable on google maps with total distance traveled
+make csv for month logs and total distance traveled
