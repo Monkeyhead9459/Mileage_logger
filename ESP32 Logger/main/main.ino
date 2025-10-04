@@ -32,8 +32,8 @@ bool debug= false;
 String lastSeenLine = "";  // Global variable to track last known line
 Preferences preferences;
 #define CURRENT_VERSION "1.0.0"
-const char* versionUrl = "https://raw.githubusercontent.com/Monkeyhead9459/Mileage_logger/main/Scripts/firmware/version.json";
-const char* firmwareUrl = "https://raw.githubusercontent.com/Monkeyhead9459/Mileage_logger/main/Scripts/firmware/firmware.bin";
+const char* versionUrl = "https://raw.githubusercontent.com/Monkeyhead9459/Mileage_logger/main/firmware/version.json";
+const char* firmwareUrl = "https://raw.githubusercontent.com/Monkeyhead9459/Mileage_logger/main/firmware/firmware.bin";
 const char* serverName = "https://ynoor7m7xi.execute-api.ap-southeast-2.amazonaws.com/v1/esp32WriteToDynamodb";  // Replace with your API URL
 #define SD_CS 5
 
