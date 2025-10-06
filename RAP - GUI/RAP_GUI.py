@@ -6,57 +6,18 @@ from tkcalendar import DateEntry
 from tkinter.ttk import Combobox
 from tkinter import ttk
 from tkintermapview import TkinterMapView
-
 import csv
 import os
 import math
+import db_pull
+import calculate
+import importlib
+importlib.reload(calculate)
 
-# --- Haversine Formula (distance between 2 lat/lon points in km) ---
-def haversine(lat1, lon1, lat2, lon2):
-    R = 6371.0  # Earth radius in km
-    phi1, phi2 = math.radians(lat1), math.radians(lat2)
-    dphi = math.radians(lat2 - lat1)
-    dlambda = math.radians(lon2 - lon1)
+documents_folder = os.path.expanduser("~/Documents/ESP32/Mileage Logger GIT/Mileage_logger/RAP - GUI/Outputs")
 
-    a = math.sin(dphi/2)**2 + math.cos(phi1)*math.cos(phi2)*math.sin(dlambda/2)**2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-    return R * c
-
-# ---Gets Co-ordinates from date--
-def getCoords(date_str, device):
-    documents_folder = os.path.expanduser("~/Documents/ESP32/Mileage Logger/RAP - GUI/Outputs")
-    csv_filename = f"{device}_{date_str}_output.csv"
-    csv_path = os.path.join(documents_folder, csv_filename)
-
-    if not os.path.isfile(csv_path):
-        return None, f"No CSV found for {date_str}"
-
-    coords = []
-    with open(csv_path, newline='') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            try:
-                lat = float(row.get("latitude", 0))
-                lon = float(row.get("longitude", 0))
-                coords.append((lat, lon))
-            except ValueError:
-                continue
-    return coords
-
-
-# --- Function to calculate mileage from CSV ---
-def calculate_mileage(date_str, device="esp32_device_001"):
-    coords = getCoords(date_str, device)
-
-    if len(coords) < 2:
-        return 0.0, "Not enough GPS points to calculate distance"
-
-    # Sum distances between consecutive points
-    total_km = 0.0
-    for i in range(1, len(coords)):
-        total_km += haversine(coords[i-1][0], coords[i-1][1], coords[i][0], coords[i][1])
-
-    return total_km, f"Processed {len(coords)} points"
+def setup():
+    db_pull.get_all_items()
 
 def get_color_gradient(n):
     """Generate n colors from blue → red."""
@@ -68,26 +29,13 @@ def get_color_gradient(n):
         colors.append(f"#{r:02x}{g:02x}{b:02x}")
     return colors
 
-
-
-def mileageDay():
-    selected_date = cal.get_date().strftime("%Y-%m-%d")
-    total_km, message = calculate_mileage(selected_date)
-    if total_km is None:
-        status_label.config(text=message, fg="red")
-    else:
-        status_label.config(text=f"Distance on {selected_date}: {total_km:.2f} km\n{message}", fg="green")
-
-def mileageMonth():
-    print("EMPTY")
-
 def show_map():
     selected_date = cal.get_date().strftime("%Y-%m-%d")
-    coords = getCoords(selected_date, device="esp32_device_001")
+    coords = calculate.getCoords(selected_date, device="esp32_device_001")
 
     # Create a new top-level window for the map
     map_window = tk.Toplevel(root)
-    map_window.title("GPS Path with Gradient")
+    map_window.title(f"GPS Path on {selected_date}")
     map_window.geometry("800x600")
 
     map_widget = TkinterMapView(map_window, width=800, height=600, corner_radius=0)
@@ -108,7 +56,38 @@ def show_map():
     map_widget.set_marker(coords[0][0], coords[0][1], text="Start")
     map_widget.set_marker(coords[-1][0], coords[-1][1], text="End")
 
+def show_mileage_day():
+    selected_date = cal.get_date().strftime("%Y-%m-%d")
+    print("Using mileageDay from:", calculate.mileageDay)
+    print("MileageDay signature:", calculate.mileageDay.__code__.co_varnames, calculate.mileageDay.__code__.co_argcount)
 
+    total_km, message = calculate.mileageDay(selected_date)
+    if total_km == 0:
+        status_label.config(text=message, fg="red")
+    else:
+        status_label.config(
+            text=f"Distance on {selected_date}: {total_km:.2f} km\n{message}",
+            fg="green"
+        )
+
+def show_mileage_month():
+    month_name = month_combo.get()
+    year_str = year_combo.get()
+    total_km, message = calculate.mileageMonth(month_name, year_str)
+    status_label.config(
+        text=f"{message}\nTotal: {total_km:.2f} km",
+        fg="green" if total_km > 0 else "red"
+    )
+
+def show_mileage_year():
+    year_str = year_combo.get()
+    total_km, message = calculate.mileageYear(year_str)
+    status_label.config(
+        text=f"{message}\nTotal: {total_km:.2f} km",
+        fg="green" if total_km > 0 else "red"
+    )
+
+setup()
 root = tk.Tk()
 root.title("Remote Access Program")
 root.geometry("500x500")
@@ -131,8 +110,8 @@ Label(day_frame, text="Select a Day:").pack(pady=10)
 cal = DateEntry(day_frame, width=12, background='blue', foreground='white', borderwidth=2)
 cal.pack(pady=5)
 
-
-daybtn = tk.Button(day_frame, text="Show This Days Mileage", command=mileageDay)
+print("CALCULATE MODULE LOCATION:", calculate)
+daybtn = tk.Button(day_frame, text="Show This Days Mileage", command=show_mileage_day)
 daybtn.pack(side="left", padx=10)
 
 mapbtn = tk.Button(day_frame, text="Show Map", command=show_map)
@@ -178,8 +157,11 @@ def print_year(event=None):
 
 year_combo.bind("<<ComboboxSelected>>", print_year)
 
-monthbtn = tk.Button(month_frame, text="Show This Months Mileage", command=mileageMonth)
-monthbtn.pack(pady=5)
+monthbtn = tk.Button(month_frame, text="Show This Months Mileage", command=show_mileage_month)
+monthbtn.pack(side="left", padx=10)
+
+yearbtn = tk.Button(month_frame, text="Show This Years Mileage", command=show_mileage_year)
+yearbtn.pack(side="left", padx=10)
 
 # Status label
 status_label = tk.Label(root, text="", font=("Arial", 10), fg="red")

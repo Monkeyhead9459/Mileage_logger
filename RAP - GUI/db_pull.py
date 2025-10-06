@@ -31,7 +31,7 @@ def update_last_saved_timestamp(device, documents_folder, latest_ts):
 
 def get_all_items(device="esp32_device_001"):
     try:
-        documents_folder = os.path.expanduser("~/Documents/ESP32/Mileage Logger/RAP - GUI/Outputs")
+        documents_folder = os.path.expanduser("~/Documents/ESP32/Mileage Logger GIT/Mileage_logger/RAP - GUI/Outputs")
 
 
         # Step 1: Get last saved timestamp
@@ -94,5 +94,6 @@ def get_all_items(device="esp32_device_001"):
     except (BotoCoreError, ClientError) as error:
         print(f"Error: {error}")
 
-# Run
-get_all_items()
+
+if __name__ == "__main__":
+    get_all_items()
