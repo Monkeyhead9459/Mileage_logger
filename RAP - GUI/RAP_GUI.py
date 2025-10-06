@@ -1,18 +1,14 @@
 import tkinter as tk
 from tkinter import Label
 from datetime import datetime
-import webbrowser
 from tkcalendar import DateEntry
 from tkinter.ttk import Combobox
 from tkinter import ttk
 from tkintermapview import TkinterMapView
-import csv
 import os
-import math
 import db_pull
 import calculate
-import importlib
-importlib.reload(calculate)
+
 
 documents_folder = os.path.expanduser("~/Documents/ESP32/Mileage Logger GIT/Mileage_logger/RAP - GUI/Outputs")
 
@@ -58,9 +54,6 @@ def show_map():
 
 def show_mileage_day():
     selected_date = cal.get_date().strftime("%Y-%m-%d")
-    print("Using mileageDay from:", calculate.mileageDay)
-    print("MileageDay signature:", calculate.mileageDay.__code__.co_varnames, calculate.mileageDay.__code__.co_argcount)
-
     total_km, message = calculate.mileageDay(selected_date)
     if total_km == 0:
         status_label.config(text=message, fg="red")
