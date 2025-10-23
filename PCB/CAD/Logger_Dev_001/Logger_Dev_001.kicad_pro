@@ -412,6 +412,22 @@
     [
       "9546b831-c7ee-4f40-8993-5fd5a38d4078",
       "Root"
+    ],
+    [
+      "588c330f-0a28-4ec5-8e7c-c377534893c3",
+      "USB C to 3v3 Power Input Module"
+    ],
+    [
+      "b37dc544-49d2-4960-bf8e-49b471c058c3",
+      "GPS Module"
+    ],
+    [
+      "907c050a-0390-4385-90cd-8ef4ffb8a61c",
+      "Real Time Clock Module"
+    ],
+    [
+      "3ed175c0-d86e-4c50-b284-622e335d2432",
+      "SD Storage Module"
     ]
   ],
   "text_variables": {}
