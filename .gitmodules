@@ -1,0 +1,3 @@
+[submodule "PCB/CAD/Library"]
+	path = PCB/CAD/Library
+	url = https://github.com/Monkeyhead9459/9459_KiCad_Lib.git

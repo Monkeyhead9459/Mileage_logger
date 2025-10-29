@@ -1,0 +1,23 @@
+#include "SD_MMC.h"
+
+void setup() {
+  Serial.begin(115200);
+
+  // Use native SD/MMC interface (SDIO pins are used automatically on C6)
+  if (!SD_MMC.begin()) {
+    Serial.println("SD_MMC Mount Failed");
+    return;
+  }
+  Serial.println("SD card mounted.");
+
+  File f = SD_MMC.open("/hello.txt", FILE_WRITE);
+  if (f) {
+    f.println("Hello from ESP32-C6 using SDIO!");
+    f.close();
+    Serial.println("Wrote file.");
+  } else {
+    Serial.println("Failed to open file for writing");
+  }
+}
+
+void loop() {}

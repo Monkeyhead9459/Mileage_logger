@@ -1,0 +1,247 @@
+(footprint "USB-C"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "USB-C connector")
+	(tags "USB-C")
+	(property "Reference" "REF**"
+		(at -5.08 -6.35 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "8b962f92-8d7b-4dc5-9f70-930971e96379")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "USB-C"
+		(at -7.62 -2.54 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5410035c-348e-4b45-a841-029a57ea2e93")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(property "Footprint" "Alexander Footprint Library:USB-C"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "86bd73ed-965b-42da-b231-94d169ac0f92")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4f7ad6bd-57f3-4210-afb7-29f30f920df8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "77efce97-e477-481f-a28f-dc3de685a908")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -7.62 -12.7)
+		(end -7.62 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "32abf013-3f37-431a-b4b2-542be22b1ac5")
+	)
+	(fp_line
+		(start -7.62 0)
+		(end 5.08 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3373ca60-57c2-4155-aa0a-d553a4c85fb1")
+	)
+	(fp_line
+		(start 5.08 -12.7)
+		(end -7.62 -12.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b0c7cd7b-7a28-4006-9233-51759fdb9bb3")
+	)
+	(fp_line
+		(start 5.08 0)
+		(end 5.08 -12.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "15110184-4c82-4a41-b38e-3021ea2158b0")
+	)
+	(fp_line
+		(start -10.16 -12.7)
+		(end -10.16 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c94769a8-9619-4324-8d9e-4d7af2ac8c9c")
+	)
+	(fp_line
+		(start -10.16 0)
+		(end 5.08 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "d405f252-47e4-45a5-bff3-0935d2df4f64")
+	)
+	(fp_line
+		(start 5.08 -12.7)
+		(end -10.16 -12.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "e9da210f-3ed7-46a6-afa1-d97548cb6b0e")
+	)
+	(fp_line
+		(start 5.08 0)
+		(end 5.08 -12.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "3159cf80-eb08-4f09-a160-df40f3975ca4")
+	)
+	(fp_text user "GND"
+		(at 0 -2.54 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "3278e6f0-41f0-4deb-b298-c1f2536cfd3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "D-"
+		(at 0 -7.62 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5e3db3ae-c610-4a8c-a980-88e3ad4ddee6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+		)
+	)
+	(fp_text user "D+"
+		(at 0 -5.08 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a088c5bf-69d8-4d53-8f44-80eb9adcc664")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+		)
+	)
+	(fp_text user "VBUS"
+		(at 0 -10.16 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "c39399a5-4b15-4eba-a1af-7b4dfc077a09")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -2.54 0 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c24cef2b-68cf-4463-858d-b47ce2a60e33")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(pad "D+" thru_hole circle
+		(at 2.54 -5.08)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a8029dd6-868f-40f8-a5ae-3d448da9fba5")
+	)
+	(pad "D-" thru_hole circle
+		(at 2.54 -7.62)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "12edbc30-152d-4fdf-8c3f-f7164e50efcb")
+	)
+	(pad "GND" thru_hole circle
+		(at 2.54 -2.54)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f7b4e088-1a60-4397-8eda-fceeab537161")
+	)
+	(pad "VBUS" thru_hole circle
+		(at 2.54 -10.16)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7528cc97-d260-4d59-9a69-964e53e4dbed")
+	)
+)
