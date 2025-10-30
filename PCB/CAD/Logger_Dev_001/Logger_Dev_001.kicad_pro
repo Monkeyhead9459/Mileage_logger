@@ -278,7 +278,53 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/SCL": [
+        "Signal"
+      ],
+      "/SDA": [
+        "Signal"
+      ],
+      "/SDIO_CLK": [
+        "Signal"
+      ],
+      "/SDIO_CMD": [
+        "Signal"
+      ],
+      "/SDIO_DATA0": [
+        "Signal"
+      ],
+      "/SDIO_DATA1": [
+        "Signal"
+      ],
+      "/SDIO_DATA2": [
+        "Signal"
+      ],
+      "/SDIO_DATA3": [
+        "Signal"
+      ],
+      "/USB C to 3v3 Power Input Module/D+_USB": [
+        "Signal"
+      ],
+      "/USB C to 3v3 Power Input Module/D-_USB": [
+        "Signal"
+      ],
+      "/USBC_RX": [
+        "Signal"
+      ],
+      "/USBC_TX": [
+        "Signal"
+      ],
+      "3v3_VCC": [
+        "Power"
+      ],
+      "GND": [
+        "Power"
+      ],
+      "VUSB": [
+        "Power"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
