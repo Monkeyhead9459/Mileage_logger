@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "bd9d374c-1174-4cef-b8b5-90a43ae92c39")
 	(paper "A4")
+	(title_block
+		(title "Mileage Logger")
+		(rev "DEV_001")
+		(company "Jake Odgers")
+	)
 	(lib_symbols
 		(symbol "CR2032-BS-6-1:CR2032-BS-6-1"
 			(pin_names
