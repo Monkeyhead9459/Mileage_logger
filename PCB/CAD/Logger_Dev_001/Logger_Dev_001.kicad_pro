@@ -321,6 +321,18 @@
       "GND": [
         "Power"
       ],
+      "Net-(D2-Pad1)": [
+        "Signal"
+      ],
+      "Net-(D3-Pad1)": [
+        "Signal"
+      ],
+      "Net-(D4-Pad1)": [
+        "Power"
+      ],
+      "RF_GND": [
+        "Power"
+      ],
       "VUSB": [
         "Power"
       ]
