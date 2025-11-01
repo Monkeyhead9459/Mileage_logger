@@ -1,3 +1,6 @@
 [submodule "PCB/CAD/Library"]
 	path = PCB/CAD/Library
 	url = https://github.com/Monkeyhead9459/9459_KiCad_Lib.git
+[submodule "PCB/CAD/Logger_Dev_001/Library"]
+	path = PCB/CAD/Logger_Dev_001/Library
+	url = https://github.com/Monkeyhead9459/9459_KiCad_Lib.git
