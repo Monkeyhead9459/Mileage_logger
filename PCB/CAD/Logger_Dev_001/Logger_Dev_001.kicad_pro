@@ -288,6 +288,9 @@
       "/GPIO9_BOOT": [
         "Signal"
       ],
+      "/GPS Module/1PPS": [
+        "Signal"
+      ],
       "/GPS_RX": [
         "Signal"
       ],
@@ -348,6 +351,9 @@
       "GND": [
         "Power"
       ],
+      "Net-(BT1-PadP)": [
+        "Power"
+      ],
       "Net-(C1-Pad1)": [
         "Power"
       ],
@@ -360,13 +366,37 @@
       "Net-(D4-Pad1)": [
         "Power"
       ],
+      "Net-(D5-Pad1)": [
+        "Power"
+      ],
+      "Net-(D6-Pad2)": [
+        "Signal"
+      ],
+      "Net-(J2-SIGNAL)": [
+        "RF_SIGNAL"
+      ],
+      "Net-(L1-Pad1)": [
+        "RF_SIGNAL"
+      ],
       "Net-(Q1A-B1)": [
         "Signal"
       ],
       "Net-(Q1B-B2)": [
         "Signal"
       ],
+      "Net-(Q2-B)": [
+        "Signal"
+      ],
+      "Net-(Q2-C)": [
+        "Signal"
+      ],
+      "Net-(U1-VCC_REF)": [
+        "RF_SIGNAL"
+      ],
       "RF_GND": [
+        "Power"
+      ],
+      "VBAT_2032": [
         "Power"
       ],
       "VUSB": [
@@ -514,10 +544,6 @@
     [
       "b37dc544-49d2-4960-bf8e-49b471c058c3",
       "GPS Module"
-    ],
-    [
-      "907c050a-0390-4385-90cd-8ef4ffb8a61c",
-      "Real Time Clock Module"
     ],
     [
       "3ed175c0-d86e-4c50-b284-622e335d2432",
