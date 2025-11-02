@@ -4051,7 +4051,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Espressif:ESP32-C6-WROOM-1"
+		(property "Footprint" "ESPRESSIF footprints:ESP32-C6-WROOM-1"
 			(at 97.79 172.085 0)
 			(effects
 				(font

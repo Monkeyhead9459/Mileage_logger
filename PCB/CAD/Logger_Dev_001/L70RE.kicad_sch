@@ -6371,7 +6371,7 @@
 				)
 			)
 		)
-		(property "Footprint" "L76_QWS"
+		(property "Footprint" "GPS L76-M33:L76_QWS"
 			(at 87.63 101.6 0)
 			(effects
 				(font
@@ -6491,7 +6491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN_SMA CONNECTOR_LPR"
+		(property "Footprint" ""
 			(at 194.31 119.38 0)
 			(effects
 				(font
@@ -7283,7 +7283,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CR2032-BS-6-1:BAT_CR2032-BS-6-1"
+		(property "Footprint" "CR2032:BAT_CR2032-BS-6-1"
 			(at 44.45 46.99 0)
 			(effects
 				(font

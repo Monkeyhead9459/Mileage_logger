@@ -13246,7 +13246,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DTR"
+		(property "Value" "DTR_TP"
 			(at 142.748 185.42 90)
 			(effects
 				(font
@@ -13608,7 +13608,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DLM11SN900HY2L:FIL_DLM11SN900HY2L"
+		(property "Footprint" "Common mode choke DLM11SN900HY2L:FIL_DLM11SN900HY2L"
 			(at 119.38 49.53 0)
 			(effects
 				(font
@@ -14409,7 +14409,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RTS"
+		(property "Value" "RTS_TP"
 			(at 142.494 190.246 90)
 			(effects
 				(font
