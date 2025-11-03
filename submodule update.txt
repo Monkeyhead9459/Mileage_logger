@@ -1,6 +1,8 @@
 //IN SUBFOLDER ENSURE IS MAIN
-git pull
+git checkout main
+git pull origin main
+
 //IN ROOT
-git add /PCB/CAD/Logger_Dev_001/Library
-git commit -m 
+git add PCB/CAD/Logger_Dev_001/Library
+git commit -m "Update submodule to latest commit"
 git push

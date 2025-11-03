@@ -5879,7 +5879,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LPRS_SMA_CONNECTOR:LPRS_SMA_CONNECTOR"
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal"
 			(at 199.39 119.38 0)
 			(effects
 				(font
@@ -5949,7 +5949,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
 			(at 255.27 151.13 0)
 			(effects
 				(font
@@ -7632,7 +7632,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
 			(at 255.27 140.97 0)
 			(effects
 				(font
