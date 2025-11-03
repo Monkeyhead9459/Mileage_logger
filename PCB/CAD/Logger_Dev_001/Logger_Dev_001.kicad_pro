@@ -573,6 +573,9 @@
       "Net-(D6-Pad2)": [
         "Signal"
       ],
+      "Net-(J1-In)": [
+        "RF_SIGNAL"
+      ],
       "Net-(J2-SIGNAL)": [
         "RF_SIGNAL"
       ],
