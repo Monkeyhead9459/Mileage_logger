@@ -605,6 +605,9 @@
       ],
       "VUSB": [
         "Power"
+      ],
+      "VUSB_UNFILTERD": [
+        "Power"
       ]
     },
     "netclass_patterns": []
