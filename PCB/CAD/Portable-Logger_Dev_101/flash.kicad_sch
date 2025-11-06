@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "66c2ba74-08b1-4bf6-8c44-8035cca4221d")
+	(paper "A4")
+	(title_block
+		(title "Mileage Logger")
+		(rev "DEV_001")
+		(company "Jake Odgers")
+	)
+	(lib_symbols)
+)
