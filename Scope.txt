@@ -8,6 +8,13 @@ time period of each saved csv file??
 distance per day
 distance per month
 
+Option 1A:
+ESP32 communicates through Bluetooth to a phone with an APP to acquire and display gps data.
+
+App Made in Flutter
+
+*******************************************
+
 Option 2:
 ESP32 uploads data to cloud storage (AWS AmazonDynamoDB)  computer remote access to acquire gps data.
 After each acquisition csv file is renamed with an increasing integer
@@ -24,4 +31,22 @@ use boto3 to access AWS
 use road api to find nearest road and track pathway or just use raw data
 use distance and elevation api???
 make csv for each day trip to displayable on google maps with total distance traveled
-make csv for month logs and total distance traveled
+make csv for month logs and total distance travelled
+
+
+********************************************
+Portable Hardware Revision:
+-LIPO battery powered
+-Buck-Boost Regulator
+-Remove BTNs
+-Remove USBC
+-Smaller ESP32 alternative
+-Small exterior Wifi/BLE SMA Antenna
+-GPS Ceramic Chip Antenna
+-Change Storage for flash
+-Very Low Power Sleep with Checks Every couple minutes to see if moved
+
+
+************************************************
+Future Hardware Implementation:
+-SIM Card for REMOTE data exporting (Could be combined with option 2)
