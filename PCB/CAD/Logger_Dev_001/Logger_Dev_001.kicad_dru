@@ -1,0 +1,6 @@
+(version 1)
+
+(rule TINY
+	(constraint clearance (min 0.15mm))
+	(condition "A.intersectsFrontCourtyard('U6') || A.intersectsFrontCourtyard('J4') || A.intersectsFrontCourtyard('U1')|| A.intersectsFrontCourtyard('J3')" ))
+

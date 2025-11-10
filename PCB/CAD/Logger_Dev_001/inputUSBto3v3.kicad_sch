@@ -8085,7 +8085,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 68.58) (xy 67.31 39.37)
+			(xy 67.31 39.37) (xy 67.31 68.58)
 		)
 		(stroke
 			(width 0)
@@ -8223,7 +8223,17 @@
 		)
 		(uuid "147eafd1-d587-473a-b1f2-985a343bef29")
 	)
-	(label "D+_USB"
+	(label "USB_UNF_D+"
+		(at 86.36 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "157b0f72-283c-4b80-9d4b-87585b43f15d")
+	)
+	(label "USB_UNF_D+"
 		(at 124.46 163.83 0)
 		(effects
 			(font
@@ -8243,7 +8253,7 @@
 		)
 		(uuid "2716cf3f-77bc-4658-ab9a-09dd71fd5a26")
 	)
-	(label "D-_USB"
+	(label "USB_D-"
 		(at 133.35 27.94 0)
 		(effects
 			(font
@@ -8252,6 +8262,16 @@
 			(justify left bottom)
 		)
 		(uuid "38553843-1abd-4cc4-851d-a046f5302097")
+	)
+	(label "USB_D+"
+		(at 74.93 132.08 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c2ad164-d136-45fc-849e-96be6e159e78")
 	)
 	(label "RTS"
 		(at 124.46 189.23 0)
@@ -8263,17 +8283,7 @@
 		)
 		(uuid "604a1a38-2eb6-4b9d-a49a-0ff85b284097")
 	)
-	(label "D+_USB"
-		(at 74.93 124.46 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "644fa27e-45fe-4989-be11-ec13dcaafa7d")
-	)
-	(label "D-_USB"
+	(label "USB_UNF_D-"
 		(at 124.46 168.91 0)
 		(effects
 			(font
@@ -8313,6 +8323,16 @@
 		)
 		(uuid "98493389-9d85-482e-b82d-015c8d363215")
 	)
+	(label "USB_UNF_D-"
+		(at 81.28 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f9a652f-5b36-4f01-891d-042fc8e4d7fe")
+	)
 	(label "USBC_TX"
 		(at 124.46 173.99 0)
 		(effects
@@ -8333,17 +8353,17 @@
 		)
 		(uuid "a9fe6eae-1c48-47e7-9d42-ba9e4111148a")
 	)
-	(label "D-_USB"
-		(at 72.39 124.46 270)
+	(label "USB_D-"
+		(at 72.39 132.08 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "aaeaf7d9-bdbe-44cc-b22e-ce9634836c54")
+		(uuid "d888e3b4-d257-4ac8-b4d8-f2c9faccdd97")
 	)
-	(label "D+_USB"
+	(label "USB_D+"
 		(at 143.51 38.1 0)
 		(effects
 			(font
@@ -8606,6 +8626,21 @@
 	(rule_area
 		(polyline
 			(pts
+				(xy 57.15 59.69) (xy 57.15 72.39) (xy 74.93 72.39) (xy 74.93 62.23) (xy 69.85 59.69)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 52aece16-46dd-4e3c-bd59-ef58425159dd)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
 				(xy 231.14 38.1) (xy 231.14 59.69) (xy 278.13 59.69) (xy 278.13 44.45) (xy 271.78 38.1)
 			)
 			(stroke
@@ -8733,6 +8768,37 @@
 		)
 		(property "Component Class" ""
 			(at 354.33 -85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 69.85 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43c13ab3-2aab-44b1-91ce-dfdc0a14c0e0")
+		(property "Netclass" "Signal"
+			(at 75.692 55.118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Component Class" ""
+			(at 280.67 -48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)

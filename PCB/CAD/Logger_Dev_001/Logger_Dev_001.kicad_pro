@@ -482,28 +482,36 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.5,
         "via_diameter": 0.3,
         "via_drill": 0.2,
         "wire_width": 6
       },
       {
+        "clearance": 0.4,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.38,
+        "via_diameter": 0.5,
+        "via_drill": 0.3
       },
       {
+        "clearance": 2.0,
         "name": "RF_signal",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0
       },
       {
+        "clearance": 0.3,
         "name": "Signal",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2
       }
     ],
     "meta": {
@@ -565,6 +573,18 @@
       "/USB C COMs 3v3 Power Input Module/RTS": [
         "Signal"
       ],
+      "/USB C COMs 3v3 Power Input Module/USB_D+": [
+        "Signal"
+      ],
+      "/USB C COMs 3v3 Power Input Module/USB_D-": [
+        "Signal"
+      ],
+      "/USB C COMs 3v3 Power Input Module/USB_UNF_D+": [
+        "Signal"
+      ],
+      "/USB C COMs 3v3 Power Input Module/USB_UNF_D-": [
+        "Signal"
+      ],
       "/USB C to 3v3 Power Input Module/D+_USB": [
         "Signal"
       ],
@@ -609,6 +629,12 @@
       ],
       "Net-(J2-SIGNAL)": [
         "RF_SIGNAL"
+      ],
+      "Net-(J4-CC1)": [
+        "Signal"
+      ],
+      "Net-(J4-CC2)": [
+        "Signal"
       ],
       "Net-(L1-Pad1)": [
         "RF_SIGNAL"
