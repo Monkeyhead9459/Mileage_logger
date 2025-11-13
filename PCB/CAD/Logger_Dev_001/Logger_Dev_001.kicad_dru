@@ -2,5 +2,17 @@
 
 (rule TINY
 	(constraint clearance (min 0.15mm))
-	(condition "A.intersectsFrontCourtyard('U6') || A.intersectsFrontCourtyard('J4') || A.intersectsFrontCourtyard('U1')|| A.intersectsFrontCourtyard('J3')" ))
+	(condition "A.intersectsFrontCourtyard('U6') || A.intersectsFrontCourtyard('J4') || A.intersectsFrontCourtyard('U1')|| A.intersectsFrontCourtyard('J3')" )
+)
 
+(rule "USB_L1_Width"
+	(layer "F.Cu")
+	(constraint track_width (opt 0.1257mm))
+    (condition "A.hasNetclass('USB_DP')")
+)
+
+(rule "USB_L3_Width"
+    (layer "In2.Cu")
+	(constraint track_width (opt 0.1105mm))
+    (condition "A.hasNetclass('USB_DP')")
+)

@@ -136,9 +136,9 @@
         "min_text_height": 1.0,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.3,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.2,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.05,
         "use_height_for_length_calcs": true
       },
@@ -472,46 +472,64 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.1257,
         "line_style": 0,
         "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_drill": 0.15,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
-        "via_diameter": 0.3,
+        "via_diameter": 0.6,
         "via_drill": 0.2,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5
       },
       {
         "clearance": 0.4,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.38,
-        "via_diameter": 0.5,
+        "via_diameter": 0.7,
         "via_drill": 0.3
       },
       {
-        "clearance": 2.0,
-        "name": "RF_signal",
+        "clearance": 0.2,
+        "name": "RF_SIGNAL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.0
+        "track_width": 0.1161
       },
       {
         "clearance": 0.3,
         "name": "Signal",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.1257,
+        "name": "USB_DP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1257
       }
     ],
     "meta": {
@@ -574,16 +592,16 @@
         "Signal"
       ],
       "/USB C COMs 3v3 Power Input Module/USB_D+": [
-        "Signal"
+        "USB_DP"
       ],
       "/USB C COMs 3v3 Power Input Module/USB_D-": [
-        "Signal"
+        "USB_DP"
       ],
       "/USB C COMs 3v3 Power Input Module/USB_UNF_D+": [
-        "Signal"
+        "USB_DP"
       ],
       "/USB C COMs 3v3 Power Input Module/USB_UNF_D-": [
-        "Signal"
+        "USB_DP"
       ],
       "/USB C to 3v3 Power Input Module/D+_USB": [
         "Signal"
@@ -601,6 +619,7 @@
         "Power"
       ],
       "GND": [
+        "GND",
         "Power"
       ],
       "Net-(BT1-PadP)": [
@@ -655,7 +674,7 @@
         "RF_SIGNAL"
       ],
       "RF_GND": [
-        "Power"
+        "GND"
       ],
       "VBAT_2032": [
         "Power"
