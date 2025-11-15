@@ -2,7 +2,7 @@
 
 (rule TINY
 	(constraint clearance (min 0.15mm))
-	(condition "A.intersectsFrontCourtyard('U6') || A.intersectsFrontCourtyard('J4') || A.intersectsFrontCourtyard('U1')|| A.intersectsFrontCourtyard('J3')" )
+	(condition "A.netname != ('GND') &&  A.intersectsFrontCourtyard('U6') || A.intersectsFrontCourtyard('J4') || A.intersectsFrontCourtyard('U1')|| A.intersectsFrontCourtyard('J3') || A.intersectsFrontCourtyard('Q1') || A.intersectsFrontCourtyard('U2')" )
 )
 
 (rule "USB_L1_Width"

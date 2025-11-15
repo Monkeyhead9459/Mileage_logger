@@ -7355,16 +7355,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 168.91) (xy 137.16 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63aa6f6b-7126-4560-8ca4-821c8490893a")
-	)
-	(wire
-		(pts
 			(xy 54.61 52.07) (xy 54.61 54.61)
 		)
 		(stroke
@@ -8015,16 +8005,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 163.83) (xy 137.16 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0a6d13d-afd7-41be-8f23-9e873a238038")
-	)
-	(wire
-		(pts
 			(xy 72.39 182.88) (xy 72.39 185.42)
 		)
 		(stroke
@@ -8233,16 +8213,6 @@
 		)
 		(uuid "157b0f72-283c-4b80-9d4b-87585b43f15d")
 	)
-	(label "USB_UNF_D+"
-		(at 124.46 163.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1e61d77f-dd04-4a18-ae78-6edce2834d98")
-	)
 	(label "DTR"
 		(at 182.88 157.48 0)
 		(effects
@@ -8282,16 +8252,6 @@
 			(justify left bottom)
 		)
 		(uuid "604a1a38-2eb6-4b9d-a49a-0ff85b284097")
-	)
-	(label "USB_UNF_D-"
-		(at 124.46 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "72a949a1-d0bb-444d-962f-081b186c1b64")
 	)
 	(label "USBC_RX"
 		(at 124.46 179.07 0)
@@ -11793,73 +11753,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 137.16 163.83 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "652f71c3-7f27-42a8-811f-fc934eb7e21b")
-		(property "Reference" "TP5"
-			(at 142.494 163.068 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "USB_D+_TP"
-			(at 142.748 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
-			(at 137.16 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 137.16 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cbd2e4ef-0432-457d-a8ff-d6d3fefed8d6")
-		)
-		(instances
-			(project "Logger_Dev_001"
-				(path "/9546b831-c7ee-4f40-8993-5fd5a38d4078/588c330f-0a28-4ec5-8e7c-c377534893c3"
-					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 203.2 83.82 0)
 		(unit 1)
@@ -15319,72 +15212,6 @@
 			(project ""
 				(path "/9546b831-c7ee-4f40-8993-5fd5a38d4078/588c330f-0a28-4ec5-8e7c-c377534893c3"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 137.16 168.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f112033d-5b2b-461b-b9e6-2702317604e4")
-		(property "Reference" "TP6"
-			(at 142.748 167.894 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "USB_D-_TP"
-			(at 142.494 169.926 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
-			(at 137.16 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 137.16 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07c0b122-1564-4041-be54-0836ce924732")
-		)
-		(instances
-			(project "Logger_Dev_001"
-				(path "/9546b831-c7ee-4f40-8993-5fd5a38d4078/588c330f-0a28-4ec5-8e7c-c377534893c3"
-					(reference "TP6")
 					(unit 1)
 				)
 			)
