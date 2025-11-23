@@ -606,7 +606,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "L76L-M33 GNSS:L76-M33"
+		(symbol "GPS_L76:L76-M33"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3895,6 +3895,12 @@
 		(uuid "27d34609-44dd-499d-89fa-611271862a7f")
 	)
 	(junction
+		(at 158.75 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30b16b30-13c6-4476-9435-8dcc351c6d8e")
+	)
+	(junction
 		(at 82.55 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3907,10 +3913,10 @@
 		(uuid "6659f007-0aa2-4098-9f7b-0a0164013c02")
 	)
 	(junction
-		(at 158.75 121.92)
+		(at 158.75 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7a08cd92-4969-4f8e-abc0-305544ce4b9e")
+		(uuid "672bb912-0ad5-4d4c-9ffa-bdebddb447e0")
 	)
 	(junction
 		(at 250.19 151.13)
@@ -3941,12 +3947,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af87678d-1b84-4534-9ea7-84ca4a7a6a6a")
-	)
-	(junction
-		(at 158.75 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d6087154-4be7-436d-8208-afef9bbb5f87")
 	)
 	(no_connect
 		(at 161.29 106.68)
@@ -4100,6 +4100,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 121.92) (xy 190.5 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e228b19-293c-4b26-919d-73bbb2774f39")
+	)
+	(wire
+		(pts
 			(xy 166.37 128.27) (xy 157.48 128.27)
 		)
 		(stroke
@@ -4127,16 +4137,6 @@
 			(type default)
 		)
 		(uuid "5833c681-f970-4739-a4f7-bb5173204f6e")
-	)
-	(wire
-		(pts
-			(xy 158.75 121.92) (xy 190.5 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59e92aad-6c2d-4298-b340-eed9f3f0203b")
 	)
 	(wire
 		(pts
@@ -4406,7 +4406,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bbcb6acd-fd09-434f-8db1-ec590c5ef6ba")
+		(uuid "b4def6d4-f577-41b6-b32a-b6b929713398")
 	)
 	(wire
 		(pts
@@ -5734,7 +5734,7 @@
 		)
 	)
 	(symbol
-		(lib_id "L76L-M33 GNSS:L76-M33")
+		(lib_id "GPS_L76:L76-M33")
 		(at 87.63 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5742,7 +5742,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5ca6474e-cac5-421a-aba8-e1e75b7e53c3")
+		(uuid "645026d1-6797-478d-8026-992bd54e12ff")
 		(property "Reference" "U1"
 			(at 123.19 91.44 0)
 			(effects
@@ -5759,7 +5759,7 @@
 				)
 			)
 		)
-		(property "Footprint" "GPS L76-M33:L76_QWS"
+		(property "Footprint" "RF_GPS:Quectel_L76"
 			(at 87.63 101.6 0)
 			(effects
 				(font
@@ -5788,59 +5788,59 @@
 				(hide yes)
 			)
 		)
-		(pin "16"
-			(uuid "f367f8ab-d562-43c0-a856-6e799587cdb1")
-		)
-		(pin "15"
-			(uuid "d6e0c992-a2a6-4e9d-9fcf-1eb87e6956df")
-		)
-		(pin "5"
-			(uuid "9610c206-4cc4-4051-a76b-2a3c875c334e")
-		)
-		(pin "2"
-			(uuid "7b475103-a6c3-4cf1-8740-36220ce805dc")
-		)
-		(pin "3"
-			(uuid "e19dfd08-b6eb-48eb-9ef5-03c4592a5c95")
-		)
-		(pin "4"
-			(uuid "12fd7212-63dd-4abb-a4a5-e028e12e3103")
+		(pin "1"
+			(uuid "d282fc90-a72e-4d3d-acfd-95948af7412a")
 		)
 		(pin "6"
-			(uuid "49af5448-f1f6-4b8a-b5ae-136dd25cfeb4")
+			(uuid "84c55c62-3dd1-4332-8394-1f65b208d5e4")
 		)
 		(pin "7"
-			(uuid "faf0ffc8-92c8-47f6-b5ce-ddbc79b9e309")
-		)
-		(pin "8"
-			(uuid "03ab1ce9-3f53-49f8-a5e5-6d35115e10ab")
-		)
-		(pin "1"
-			(uuid "a3c0b0fb-9dd2-4381-8734-c2740cc3f763")
-		)
-		(pin "9"
-			(uuid "c6b85f00-9aeb-488d-8b72-145270e4e5e8")
+			(uuid "8ee1b0e0-de56-40ee-8fdc-6b1cb0230303")
 		)
 		(pin "18"
-			(uuid "fe1f01e8-e8de-441a-9fb9-32d10359aa1a")
+			(uuid "332b1a47-bd5e-4e91-b752-6dd439950a62")
 		)
-		(pin "17"
-			(uuid "1262128a-68a0-4b2a-8203-544eca54de40")
+		(pin "8"
+			(uuid "8903cd47-58d6-477a-91a0-7bb2c61f9bfd")
+		)
+		(pin "2"
+			(uuid "61cccd06-3acd-4370-99ec-ff2b2fdf9e1a")
+		)
+		(pin "4"
+			(uuid "de37d603-9557-4359-95d4-fed6720a043b")
+		)
+		(pin "3"
+			(uuid "29e78701-f923-4fa7-912a-531dd2fec837")
+		)
+		(pin "5"
+			(uuid "4c058456-a3ed-4860-92c5-dba7728eb0a7")
+		)
+		(pin "9"
+			(uuid "4f92ad9b-603e-4b81-bdbf-9c010434ef45")
 		)
 		(pin "12"
-			(uuid "c519d5f3-d6f5-4436-8132-260acc5e6b82")
+			(uuid "962414bb-1fba-4874-9f28-25d53f0a1fe0")
+		)
+		(pin "15"
+			(uuid "4038bcf0-b365-4ebd-b93f-4dc1abbb3ac6")
+		)
+		(pin "17"
+			(uuid "2646c8c2-b1fb-4085-8368-2905961613b0")
 		)
 		(pin "13"
-			(uuid "8c42443c-5acd-44ae-a90b-e25de9a904bf")
-		)
-		(pin "11"
-			(uuid "5b43898c-74e3-451c-b01a-188d731d74c0")
+			(uuid "f97d017f-bc95-41e6-b2d7-a0b114cc59c0")
 		)
 		(pin "10"
-			(uuid "080bf696-5e59-4b7b-ac23-c16becb7044a")
+			(uuid "ee3c1c04-7e9a-4156-9e2d-cb5c0590d101")
+		)
+		(pin "11"
+			(uuid "c81977cc-f588-4179-b0ec-c9af7de686c0")
+		)
+		(pin "16"
+			(uuid "5cf30de6-9d34-411d-ac75-2ce6b564377d")
 		)
 		(pin "14"
-			(uuid "08d04227-ff51-40b4-8f12-ad2a38f34178")
+			(uuid "1fa88050-5f82-420c-866b-fb7496b47a00")
 		)
 		(instances
 			(project ""
