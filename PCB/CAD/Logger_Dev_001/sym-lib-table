@@ -2,7 +2,7 @@
   (version 7)
   (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Library/Esspresif_KiCad_Lib/symbols/Espressif.kicad_sym")(options "")(descr ""))
   (lib (name "2171750001")(type "KiCad")(uri "${KIPRJMOD}/Library/Molex USB C/2171750001.kicad_sym")(options "")(descr ""))
-  (lib (name "CONSMA002-SMD-G-T")(type "KiCad")(uri "${KIPRJMOD}/Library/TE SMA CONN/CONSMA002-SMD-G-T.kicad_sym")(options "")(descr ""))
+  (lib (name "CONSMA002-SMD-G-T")(type "KiCad")(uri "${KIPRJMOD}/Library/TE SMA CONN/symbols/CONSMA002-SMD-G-T.kicad_sym")(options "")(descr ""))
   (lib (name "Quectel L70RE")(type "KiCad")(uri "${KIPRJMOD}/Library/Quectel L70RE GPS MODULE/2025-10-21_00-01-27.kicad_sym")(options "")(descr ""))
   (lib (name "DLM11SN900HY2L")(type "KiCad")(uri "${KIPRJMOD}/Library/Common Mode Choke DLM11SN900HY2L/DLM11SN900HY2L.kicad_sym")(options "")(descr ""))
 )
