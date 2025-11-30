@@ -8,9 +8,9 @@ from tkintermapview import TkinterMapView
 import os
 import db_pull
 import calculate
+from config import documents_folder
 
-
-documents_folder = os.path.expanduser("~/Documents/ESP32/Mileage Logger GIT/Mileage_logger/RAP - GUI/Outputs")
+print(documents_folder) 
 
 def setup():
     db_pull.get_all_items()

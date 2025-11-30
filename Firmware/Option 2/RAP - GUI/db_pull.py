@@ -3,7 +3,13 @@ from botocore.exceptions import BotoCoreError, ClientError
 from boto3.dynamodb.conditions import Key
 import csv
 import os
+import pytz   # install with: pip install pytz
 from collections import defaultdict
+from config import documents_folder
+
+# Define your local timezone
+LOCAL_TZ = pytz.timezone("Pacific/Auckland")
+
 
 # Initialize DynamoDB resource
 dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-2')
@@ -29,11 +35,28 @@ def update_last_saved_timestamp(device, documents_folder, latest_ts):
         writer.writeheader()
         writer.writerow({"last_timestamp": latest_ts})
 
+        
+def convert_timestamp_to_local(ts_str):
+    """
+    Convert GPS UTC timestamp string (ISO 8601) to local timezone string.
+    Example input: '2025-10-09T01:07:39'
+    """
+    # Parse as naive datetime
+    dt = datetime.fromisoformat(ts_str)
+
+    # Attach UTC timezone
+    dt_utc = pytz.UTC.localize(dt)
+
+    # Convert to local timezone
+    dt_local = dt_utc.astimezone(LOCAL_TZ)
+
+    # Return as ISO string (or any format you prefer)
+    return dt_local.isoformat()
+
+
 def get_all_items(device="esp32_device_001"):
     try:
-        documents_folder = os.path.expanduser("~/Documents/ESP32/Mileage Logger GIT/Mileage_logger/RAP - GUI/Outputs")
-
-
+        
         # Step 1: Get last saved timestamp
         last_saved = get_last_saved_timestamp(device, documents_folder)
         print(f"Latest saved timestamp for {device}: {last_saved}")
@@ -69,8 +92,14 @@ def get_all_items(device="esp32_device_001"):
             ts = item.get("timestamp", "")
             if not ts:
                 continue
-            date_part = ts[:10]
+
+            # Convert UTC 
+            local_ts = convert_timestamp_to_local(ts)
+            item["timestamp"] = local_ts   # overwrite with local time
+
+            date_part = local_ts[:10]      # group by local date
             grouped[date_part].append(item)
+
 
         # Step 5: Append new data into per-date CSVs
         for date, rows in grouped.items():

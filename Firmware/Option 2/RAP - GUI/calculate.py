@@ -4,7 +4,6 @@ import math
 from datetime import datetime
 from collections import defaultdict
 
-documents_folder = os.path.join(os.path.dirname(__file__), "Outputs")
 
 # --- Haversine Formula ---
 def haversine(lat1, lon1, lat2, lon2):
