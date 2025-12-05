@@ -17,25 +17,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "BT"
-				(at -3.81 3.81 0)
+			(property "Reference" "BT1"
+				(at -1.9051 3.81 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
 			(property "Value" "CR2032-BS-6-1"
-				(at -3.81 -5.08 0)
+				(at 0.6349 3.81 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Footprint" "CR2032-BS-6-1:BAT_CR2032-BS-6-1"
+			(property "Footprint" "CR2032:BAT_CR2032-BS-6-1"
 				(at 0 0 0)
 				(effects
 					(font
@@ -45,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588884037066350592"
 				(at 0 0 0)
 				(effects
 					(font
@@ -54,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Battery Holder CR2032 SMD Button And Strip Battery Connector ROHS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -193,6 +193,15 @@
 					(hide yes)
 				)
 			)
+			(property "LCSC" "C70377"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(symbol "CR2032-BS-6-1_0_0"
 				(polyline
 					(pts
@@ -290,7 +299,9 @@
 						(type none)
 					)
 				)
-				(pin passive line
+			)
+			(symbol "CR2032-BS-6-1_1_0"
+				(pin power_out line
 					(at -7.62 0 0)
 					(length 5.08)
 					(name "~"
@@ -308,7 +319,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at 7.62 0 180)
 					(length 5.08)
 					(name "~"
@@ -3783,107 +3794,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "2.5 Years at 10uA"
 		(exclude_from_sim no)
@@ -3967,7 +3877,7 @@
 	)
 	(text_box "CR2032 Battery Circuit for GPS RTC\n"
 		(exclude_from_sim no)
-		(at 21.59 15.24 0)
+		(at 21.59 20.32 0)
 		(size 99.06 55.88)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3998,22 +3908,10 @@
 		(uuid "27d34609-44dd-499d-89fa-611271862a7f")
 	)
 	(junction
-		(at 73.66 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2d056ae4-87ed-4f3d-85ed-596645bb935a")
-	)
-	(junction
 		(at 82.55 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5a05b7b2-7cb5-40f4-8ff6-209f91c2924c")
-	)
-	(junction
-		(at 54.61 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6014f731-155d-43ac-a7bf-68ea26581329")
 	)
 	(junction
 		(at 250.19 140.97)
@@ -4058,28 +3956,10 @@
 		(uuid "af87678d-1b84-4534-9ea7-84ca4a7a6a6a")
 	)
 	(junction
-		(at 66.04 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd179aae-6d03-439c-8c51-daf37c5a9854")
-	)
-	(junction
 		(at 158.75 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6087154-4be7-436d-8208-afef9bbb5f87")
-	)
-	(junction
-		(at 82.55 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eba59391-310b-4f0c-8023-07b6a8259584")
-	)
-	(junction
-		(at 62.23 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f1c191a7-a89a-4677-be8a-e97179423bf6")
 	)
 	(no_connect
 		(at 161.29 106.68)
@@ -4203,16 +4083,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 36.83) (xy 66.04 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cdf8b1b-1bd5-4bf6-81c5-4e21c3a7d318")
-	)
-	(wire
-		(pts
 			(xy 157.48 128.27) (xy 157.48 132.08)
 		)
 		(stroke
@@ -4240,16 +4110,6 @@
 			(type default)
 		)
 		(uuid "39d73714-16af-43c6-b86c-589f76564e96")
-	)
-	(wire
-		(pts
-			(xy 62.23 36.83) (xy 54.61 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d51eb53-54e1-438f-b0f0-1b6e9ba63171")
 	)
 	(wire
 		(pts
@@ -4323,16 +4183,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 36.83) (xy 66.04 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b98405a-f0ab-418c-a2de-ead90a4f07a0")
-	)
-	(wire
-		(pts
 			(xy 77.47 49.53) (xy 77.47 57.15)
 		)
 		(stroke
@@ -4393,13 +4243,23 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 36.83) (xy 87.63 36.83)
+			(xy 77.47 36.83) (xy 87.63 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "78975e32-8056-46ad-a8dc-15a9644975ff")
+	)
+	(wire
+		(pts
+			(xy 62.23 36.83) (xy 66.04 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7975bde0-e244-4306-807d-a13cd8c7e2da")
 	)
 	(wire
 		(pts
@@ -4690,16 +4550,6 @@
 			(type default)
 		)
 		(uuid "ee38524e-13a5-4e27-966d-df19632329f5")
-	)
-	(wire
-		(pts
-			(xy 77.47 36.83) (xy 82.55 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6290ac8-777a-49b0-8bee-96406b0f6072")
 	)
 	(wire
 		(pts
@@ -5942,7 +5792,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "-165dBm -40℃~+85℃ 2.8V~4.3V SMD-18P GNSS Modules ROHS"
+			(at 87.63 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2916232"
 			(at 87.63 101.6 0)
 			(effects
 				(font
@@ -6051,7 +5910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8600772178468225024"
 			(at 199.39 119.38 0)
 			(effects
 				(font
@@ -6060,7 +5919,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "-45℃~+80℃ 1 14.6mm 4.65mm 50Ω 6GHz Board Side Inner Bore Plugin Coaxial Connectors (RF) ROHS"
+			(at 199.39 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7498154"
 			(at 199.39 119.38 0)
 			(effects
 				(font
@@ -6089,7 +5957,7 @@
 		(at 250.19 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -6833,7 +6701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588884037066350592"
 			(at 44.45 46.99 0)
 			(effects
 				(font
@@ -6842,7 +6710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Battery Holder CR2032 SMD Button And Strip Battery Connector ROHS"
 			(at 44.45 46.99 0)
 			(effects
 				(font
@@ -6978,6 +6846,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C70377"
+			(at 44.45 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -7772,7 +7649,7 @@
 		(at 250.19 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8117,71 +7994,6 @@
 			(project "Logger_Dev_001"
 				(path "/9546b831-c7ee-4f40-8993-5fd5a38d4078/b37dc544-49d2-4960-bf8e-49b471c058c3"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 82.55 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d2ad55cc-5e56-4c94-a0e5-281039b36ea4")
-		(property "Reference" "#FLG04"
-			(at 82.55 34.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 82.55 28.956 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 82.55 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdcdee28-5ca0-43eb-b5d6-91a99fce8055")
-		)
-		(instances
-			(project "Logger_Dev_001"
-				(path "/9546b831-c7ee-4f40-8993-5fd5a38d4078/b37dc544-49d2-4960-bf8e-49b471c058c3"
-					(reference "#FLG04")
 					(unit 1)
 				)
 			)

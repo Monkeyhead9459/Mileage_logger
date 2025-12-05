@@ -3459,7 +3459,7 @@
 		(at 254 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4284,6 +4284,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5366877"
+			(at 97.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "67cc4e79-6cb3-49c7-9e51-11cc314a62b0")
 		)
@@ -4691,7 +4700,7 @@
 		(at 254 143.51 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
