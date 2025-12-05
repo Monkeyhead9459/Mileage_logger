@@ -2117,8 +2117,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 2.54 2.54 0)
+			(property "Reference" "J4"
+				(at 0 20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2495,7 +2495,7 @@
 				)
 			)
 			(symbol "Connector, USB-TYPE-C-16P_1_1"
-				(pin passive line
+				(pin power_out line
 					(at -7.62 -22.86 90)
 					(length 5.08)
 					(name "SHIELD"
@@ -6677,12 +6677,6 @@
 		(uuid "2ff876f1-b08b-4131-ac4a-865debbca109")
 	)
 	(junction
-		(at 27.94 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36538070-626b-4a59-8a4b-038bb6142174")
-	)
-	(junction
 		(at 189.23 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7788,16 +7782,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 78.74) (xy 27.94 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af1dd39c-c311-4214-93af-9d2d83ade751")
-	)
-	(wire
-		(pts
 			(xy 191.77 123.19) (xy 191.77 130.81)
 		)
 		(stroke
@@ -8188,7 +8172,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 72.39) (xy 27.94 78.74)
+			(xy 27.94 72.39) (xy 27.94 82.55)
 		)
 		(stroke
 			(width 0)
@@ -11701,72 +11685,6 @@
 			(project "Logger_Dev_001"
 				(path "/9546b831-c7ee-4f40-8993-5fd5a38d4078/588c330f-0a28-4ec5-8e7c-c377534893c3"
 					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "PWR_FLAG_1")
-		(lib_id "power:PWR_FLAG")
-		(at 27.94 78.74 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5add0ed8-70f6-4cd5-9457-fe92bd37c1a2")
-		(property "Reference" "#FLG03"
-			(at 26.035 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 20.066 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 27.94 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 27.94 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dca6351b-d7d4-4e38-ac6c-00dbbbeb50c6")
-		)
-		(instances
-			(project "Logger_Dev_001"
-				(path "/9546b831-c7ee-4f40-8993-5fd5a38d4078/588c330f-0a28-4ec5-8e7c-c377534893c3"
-					(reference "#FLG03")
 					(unit 1)
 				)
 			)
