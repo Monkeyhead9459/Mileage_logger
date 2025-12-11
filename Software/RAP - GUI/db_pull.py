@@ -7,6 +7,7 @@ import pytz   # install with: pip install pytz
 from collections import defaultdict
 from datetime import datetime
 from config import documents_folder
+from calculate import haversine
 
 # Define your local timezone
 LOCAL_TZ = pytz.timezone("Pacific/Auckland")
