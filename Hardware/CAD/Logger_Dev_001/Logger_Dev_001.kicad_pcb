@@ -100,6 +100,7 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
+		(aux_axis_origin 118.775 138.875)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -4711,7 +4712,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "dc9f5b38-b677-4227-9e1d-fa58659c411c")
 		)
 		(pad "29" thru_hole circle
 			(at -1 1 180)
@@ -4723,7 +4724,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "09148a53-36ca-4fc6-930c-8cbb7e60b0fa")
 		)
 		(pad "29" thru_hole circle
 			(at 0 -1 180)
@@ -4735,7 +4736,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "dbbe1539-f549-43a1-89f0-bf6c135fa618")
 		)
 		(pad "29" thru_hole circle
 			(at 0 0 180)
@@ -4747,7 +4748,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "bda16969-a2fe-4400-bcad-a2d7a41b6d7a")
 		)
 		(pad "29" smd roundrect
 			(at 0 0 270)
@@ -4757,7 +4758,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "1e794324-943b-405d-910a-665b576879ef")
 		)
 		(pad "29" thru_hole circle
 			(at 0 1 180)
@@ -4769,7 +4770,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "82c02467-afb2-4af1-9e5d-99dca98fcb26")
 		)
 		(pad "29" thru_hole circle
 			(at 1 -1 180)
@@ -4781,7 +4782,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "b24f0e24-953e-4463-b173-051f67aabed9")
 		)
 		(pad "29" thru_hole circle
 			(at 1 0 180)
@@ -4793,7 +4794,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "5b84c61c-68c5-49ad-89c8-c3cf1825e708")
 		)
 		(pad "29" thru_hole circle
 			(at 1 1 180)
@@ -4805,7 +4806,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "unspecified")
-			(uuid "418ee4c6-cb54-454f-bad1-e485fb040362")
+			(uuid "1ad2a270-5bde-4d26-8d4e-9981f8980997")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/WQFN-28_L5.0-W5.0-P0.50-BL-EP3.2.step"
