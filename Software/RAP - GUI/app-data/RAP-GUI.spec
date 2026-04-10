@@ -15,7 +15,8 @@ a = Analysis(
     pathex=['..'],            # project root
     binaries=[],
     datas=tkmap_data + boto_data + pytz_data + [
-        ('../Outputs', 'Outputs'),   # include Outputs folder if present
+    ('../Outputs', 'Outputs'),
+    ('../version.txt', '.'),  
     ],
     hiddenimports=[
         # GUI + utilities
