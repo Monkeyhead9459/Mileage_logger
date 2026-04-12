@@ -1,2 +1,2 @@
-dev_esp32,timestamp,altitude,latitude,longitude
-esp32_device_001,2026-03-31T09:00:48+13:00,0,-36.604652,174.802185
+dev_esp32,timestamp,altitude,latitude,longitude,journey_id
+esp32_device_001,2026-03-31T09:00:48+13:00,0,-36.604652,174.802185,1

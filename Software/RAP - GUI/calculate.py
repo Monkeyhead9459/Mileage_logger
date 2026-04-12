@@ -18,24 +18,45 @@ def haversine(lat1, lon1, lat2, lon2):
 
 
 # --- Load coordinates from a CSV file ---
-def getCoords(date_str, device):
+def getCoords(date_str, device, journey_id=None):
     csv_filename = f"{device}_{date_str}_output.csv"
     csv_path = os.path.join(documents_folder, csv_filename)
 
     if not os.path.isfile(csv_path):
-        return []
+        return [] if journey_id is None else {}
 
-    coords = []
+    # Load all rows
+    rows = []
     with open(csv_path, newline='') as f:
         reader = csv.DictReader(f)
         for row in reader:
             try:
                 lat = float(row.get("latitude", 0))
                 lon = float(row.get("longitude", 0))
-                coords.append((lat, lon))
+                jid = int(row.get("journey_id", 0))
+                rows.append((jid, lat, lon))
             except ValueError:
                 continue
-    return coords
+
+    # --- CASE 1: journey_id is None → return ALL coords (existing behavior) ---
+    if journey_id is None:
+        return [(lat, lon) for (_, lat, lon) in rows]
+
+    # --- CASE 2: journey_id is a single int ---
+    if isinstance(journey_id, int):
+        return [(lat, lon) for (jid, lat, lon) in rows if jid == journey_id]
+
+    # --- CASE 3: journey_id is a list of ints ---
+    if isinstance(journey_id, (list, tuple, set)):
+        result = {}
+        for jid, lat, lon in rows:
+            if jid in journey_id:
+                result.setdefault(jid, [])
+                result[jid].append((lat, lon))
+        return result
+
+    # Fallback
+    return []
 
 
 # --- Calculate mileage for a single day ---
