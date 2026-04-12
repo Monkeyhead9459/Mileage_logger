@@ -1,4 +1,4 @@
-from RAP_GUI import APP_VERSION
+from config import APP_VERSION
 import os
 import sys
 import json

@@ -8,3 +8,5 @@ else:
 
 documents_folder = os.path.join(base_path, "Outputs")
 os.makedirs(documents_folder, exist_ok=True)
+
+APP_VERSION = "v1.0.2"
