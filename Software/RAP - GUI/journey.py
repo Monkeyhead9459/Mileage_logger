@@ -1,5 +1,6 @@
 import os
 import csv
+import requests
 from datetime import datetime
 from calculate import haversine
 from config import documents_folder
@@ -75,4 +76,26 @@ def assign_daily_journey_ids(output_folder):
 
     print("✅ Daily journey ID assignment complete.")
 
-assign_daily_journey_ids(documents_folder)   
+
+
+def reverse_geocode(lat, lon):
+    url = "https://nominatim.openstreetmap.org/reverse"
+    params = {
+        "lat": lat,
+        "lon": lon,
+        "format": "json",
+        "zoom": 18,
+        "addressdetails": 1
+    }
+
+    headers = {
+        "User-Agent": "MileageLoggerApp/1.0"
+    }
+
+    r = requests.get(url, params=params, headers=headers)
+    data = r.json()
+
+    return data.get("display_name", "Unknown location")
+
+if __name__ == "__main__":
+    assign_daily_journey_ids(documents_folder)   
