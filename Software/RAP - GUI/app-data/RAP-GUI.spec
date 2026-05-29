@@ -1,31 +1,28 @@
-# app-data/RAP_GUI.spec
-# One-folder EXE with metadata, icon, TkinterMapView, boto3, botocore, pytz
+# app-data/RAP-GUI.spec
+# Single-file EXE — TkinterMapView, boto3, botocore, pytz
+# Run from the app-data/ directory:
+#   pyinstaller RAP-GUI.spec --distpath ../dist --workpath ../build
 
 from PyInstaller.utils.hooks import collect_data_files
 
-# Collect required data files
 tkmap_data = collect_data_files('tkintermapview')
-boto_data = collect_data_files('botocore')
-pytz_data = collect_data_files('pytz')
+boto_data  = collect_data_files('botocore')
+pytz_data  = collect_data_files('pytz')
 
 block_cipher = None
 
 a = Analysis(
-    ['../RAP_GUI.py'],          # main entry script
-    pathex=['..'],            # project root
+    ['../RAP_GUI.py'],
+    pathex=['..'],
     binaries=[],
-    datas=tkmap_data + boto_data + pytz_data + [
-    ('../Outputs', 'Outputs'),
-    ('../version.txt', '.'),  
-    ],
+    datas=tkmap_data + boto_data + pytz_data,
     hiddenimports=[
-        # GUI + utilities
+        # GUI + map
         'tkintermapview',
         'requests',
         'PIL',
         'geocoder',
         'pyperclip',
-        'pywin32',
 
         # AWS SDK
         'boto3',
@@ -45,8 +42,6 @@ a = Analysis(
     hookspath=[],
     runtime_hooks=[],
     excludes=[],
-    win_no_prefer_redirects=False,
-    win_private_assemblies=False,
     cipher=block_cipher,
 )
 
@@ -63,16 +58,6 @@ exe = EXE(
     strip=False,
     upx=False,
     console=False,
-    version='version.txt',     # metadata file inside app-data
-    icon='RAP_GUI.ico'         # icon inside app-data
+    icon='RAP_GUI.ico',
 )
-
-coll = COLLECT(
-    exe,
-    a.binaries,
-    a.zipfiles,
-    a.datas,
-    strip=False,
-    upx=False,
-    name='RAP_GUI'
-)
+# No COLLECT() — single-file mode so the auto-updater can swap the exe directly

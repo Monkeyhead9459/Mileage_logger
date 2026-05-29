@@ -1,0 +1,300 @@
+[
+  {
+    "id": "c0e13710",
+    "merge_time": "2026-05-29T16:48:33",
+    "date": "2025-10-02",
+    "original_jids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "merged_jid": 1,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-02_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-02_20260529T164830_c0e13710_backup.csv"
+  },
+  {
+    "id": "d49992a9",
+    "merge_time": "2026-05-29T16:48:34",
+    "date": "2025-10-04",
+    "original_jids": [
+      5,
+      6
+    ],
+    "merged_jid": 5,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-04_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-04_20260529T164833_d49992a9_backup.csv"
+  },
+  {
+    "id": "27f9fa85",
+    "merge_time": "2026-05-29T16:48:36",
+    "date": "2025-10-08",
+    "original_jids": [
+      1,
+      2,
+      3
+    ],
+    "merged_jid": 1,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-08_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-08_20260529T164834_27f9fa85_backup.csv"
+  },
+  {
+    "id": "0820cf1e",
+    "merge_time": "2026-05-29T16:48:38",
+    "date": "2025-10-08",
+    "original_jids": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "merged_jid": 8,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-08_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-08_20260529T164836_0820cf1e_backup.csv"
+  },
+  {
+    "id": "98329f5a",
+    "merge_time": "2026-05-29T16:48:39",
+    "date": "2025-10-09",
+    "original_jids": [
+      2,
+      3
+    ],
+    "merged_jid": 2,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-09_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-09_20260529T164838_98329f5a_backup.csv"
+  },
+  {
+    "id": "b833fdd8",
+    "merge_time": "2026-05-29T16:48:41",
+    "date": "2025-10-15",
+    "original_jids": [
+      2,
+      3,
+      4
+    ],
+    "merged_jid": 2,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-15_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-15_20260529T164839_b833fdd8_backup.csv"
+  },
+  {
+    "id": "0ad04fed",
+    "merge_time": "2026-05-29T16:48:44",
+    "date": "2025-10-15",
+    "original_jids": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "merged_jid": 5,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-15_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-15_20260529T164841_0ad04fed_backup.csv"
+  },
+  {
+    "id": "2dccad1b",
+    "merge_time": "2026-05-29T16:48:45",
+    "date": "2025-10-15",
+    "original_jids": [
+      10,
+      11
+    ],
+    "merged_jid": 10,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-15_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-15_20260529T164844_2dccad1b_backup.csv"
+  },
+  {
+    "id": "6b05103e",
+    "merge_time": "2026-05-29T16:48:46",
+    "date": "2025-10-18",
+    "original_jids": [
+      4,
+      5
+    ],
+    "merged_jid": 4,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-18_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-18_20260529T164845_6b05103e_backup.csv"
+  },
+  {
+    "id": "bcb0d0b8",
+    "merge_time": "2026-05-29T16:48:47",
+    "date": "2025-10-22",
+    "original_jids": [
+      3,
+      4
+    ],
+    "merged_jid": 3,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-22_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-22_20260529T164846_bcb0d0b8_backup.csv"
+  },
+  {
+    "id": "3bdac926",
+    "merge_time": "2026-05-29T16:48:47",
+    "date": "2025-10-31",
+    "original_jids": [
+      4,
+      5
+    ],
+    "merged_jid": 4,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-31_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-31_20260529T164847_3bdac926_backup.csv"
+  },
+  {
+    "id": "0a3149f1",
+    "merge_time": "2026-05-29T16:48:48",
+    "date": "2025-10-31",
+    "original_jids": [
+      6,
+      7
+    ],
+    "merged_jid": 6,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-10-31_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-10-31_20260529T164847_0a3149f1_backup.csv"
+  },
+  {
+    "id": "17a041d2",
+    "merge_time": "2026-05-29T16:48:49",
+    "date": "2025-11-22",
+    "original_jids": [
+      1,
+      2
+    ],
+    "merged_jid": 1,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-11-22_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-11-22_20260529T164848_17a041d2_backup.csv"
+  },
+  {
+    "id": "cb93122f",
+    "merge_time": "2026-05-29T16:48:50",
+    "date": "2025-11-22",
+    "original_jids": [
+      5,
+      6
+    ],
+    "merged_jid": 5,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-11-22_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-11-22_20260529T164849_cb93122f_backup.csv"
+  },
+  {
+    "id": "9844d436",
+    "merge_time": "2026-05-29T16:48:53",
+    "date": "2025-11-23",
+    "original_jids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "merged_jid": 1,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-11-23_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-11-23_20260529T164850_9844d436_backup.csv"
+  },
+  {
+    "id": "01a6b9e1",
+    "merge_time": "2026-05-29T16:48:54",
+    "date": "2025-11-23",
+    "original_jids": [
+      7,
+      8
+    ],
+    "merged_jid": 7,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-11-23_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-11-23_20260529T164853_01a6b9e1_backup.csv"
+  },
+  {
+    "id": "912197d4",
+    "merge_time": "2026-05-29T16:48:56",
+    "date": "2025-11-28",
+    "original_jids": [
+      1,
+      2,
+      3
+    ],
+    "merged_jid": 1,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-11-28_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-11-28_20260529T164854_912197d4_backup.csv"
+  },
+  {
+    "id": "af79849b",
+    "merge_time": "2026-05-29T16:48:57",
+    "date": "2025-11-28",
+    "original_jids": [
+      6,
+      7,
+      8
+    ],
+    "merged_jid": 6,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2025-11-28_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2025-11-28_20260529T164856_af79849b_backup.csv"
+  },
+  {
+    "id": "f3e1f25a",
+    "merge_time": "2026-05-29T16:48:58",
+    "date": "2026-03-19",
+    "original_jids": [
+      5,
+      6
+    ],
+    "merged_jid": 5,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2026-03-19_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2026-03-19_20260529T164857_f3e1f25a_backup.csv"
+  },
+  {
+    "id": "b558ae4a",
+    "merge_time": "2026-05-29T16:48:59",
+    "date": "2026-03-30",
+    "original_jids": [
+      3,
+      4
+    ],
+    "merged_jid": 3,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2026-03-30_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2026-03-30_20260529T164858_b558ae4a_backup.csv"
+  },
+  {
+    "id": "dd6af580",
+    "merge_time": "2026-05-29T16:49:00",
+    "date": "2026-04-29",
+    "original_jids": [
+      1,
+      2
+    ],
+    "merged_jid": 1,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2026-04-29_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2026-04-29_20260529T164859_dd6af580_backup.csv"
+  },
+  {
+    "id": "067b4d45",
+    "merge_time": "2026-05-29T16:49:01",
+    "date": "2026-05-16",
+    "original_jids": [
+      4,
+      5
+    ],
+    "merged_jid": 4,
+    "folder": "Filtered",
+    "csv_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Outputs_Filtered\\esp32_device_001_2026-05-16_output.csv",
+    "backup_path": "C:\\Users\\jodgers\\Desktop\\PP-9459\\Mileage_logger\\Software\\RAP - GUI\\dist\\Merge_Backups\\2026-05-16_20260529T164900_067b4d45_backup.csv"
+  }
+]
