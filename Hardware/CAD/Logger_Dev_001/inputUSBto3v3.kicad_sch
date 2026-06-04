@@ -13795,6 +13795,7 @@
 	(symbol
 		(lib_id "DLM11SN900HY2L:DLM11SN900HY2L")
 		(at 119.38 33.02 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13802,7 +13803,7 @@
 		(dnp no)
 		(uuid "adceafcf-b025-453f-a1bc-b9b5740aeebd")
 		(property "Reference" "FL1"
-			(at 119.126 25.146 0)
+			(at 119.126 40.894 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13810,7 +13811,7 @@
 			)
 		)
 		(property "Value" "DLM11SN900HY2L"
-			(at 119.888 40.64 0)
+			(at 119.888 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
